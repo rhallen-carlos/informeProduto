@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+:root{
+  --fontMontSerrat:'Montserrat', sans-serif;
+  --fontFraunces: 'Fraunces', serif;
+
+  --azulAcinzntado:hsl(228, 12%, 48%);
+  --cianoEscuro:hsl(158, 36%, 37%);
+  --cianoEscuroHover:hsl(156, 20%, 28%);
+  --branco: white;
+  --rosa: hsl(328, 100%, 97%);
+}
+
+img{
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.conteiner{
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--rosa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geral{
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo{
+  width: 240px;
+  height: 390px;
+  padding: 30px;  
+  border-radius: 0 10px 10px 0;
+  background: var(--branco);
+}
+
+.conteudoCategoria{
+  font-family: var(--fontMontSerrat);
+  letter-spacing: 10px;
+  font-size: 14px;
+  color: var(--azulAcinzntado);
+}
+
+.conteudoTitulo{
+  font-family: var(--fontFraunces);
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.conteudoDescricao{
+  font-family: var(--fontMontSerrat);
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--azulAcinzntado);
+}
+
+
+.conteudoValores{
+  display: flex;
+  margin-top: 20px;
+  color: var(--cianoEscuro);
+}
+
+.conteudoPreco{
+  font-family: var(--fontFraunces);
+
+}
+
+.conteudoPrecoPromocao{
+  font-size: 14px;
+  margin: 5px 20px;
+  font-family: var(--fontMontSerrat);
+  text-decoration: line-through;
+}
+
+button{
+  font-size: 14px;
+  margin-top: 25px;
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--branco);
+  background: var(--cianoEscuro);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--cianoEscuroHover);
+}
+
+@media screen and (max-width:620px){
+  
+  img{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .conteudo{
+    border-radius: 0 0 10px 10px;
+  }
+
+  
+}
+
